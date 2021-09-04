@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .acordeon {
+            width: 500px;
+            margin: 100px auto;
+        }
+
+        .acordeon .item {
+            display: block;
+        }
+
+        .acordeon .item .header button {
+            display: block;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .acordeon .item .content {
+            transition: height 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+            overflow: hidden;
+            height: 0;
+        }
+
+        .acordeon .item .content.show {
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="acordeon">
+        <div class="item">
+            <div class="header"><button>Elemento 1</button></div>
+            <div class="content">
+                Lorem ipsun dolor sit amLorem ipsun dolor sit ametLorem ipsun dolor sit ametLorem ipsun dolor sit amet
+            </div>
+        </div>
+        <div class="item">
+            <div class="header"><button>Elemento 2</button></div>
+            <div class="content">
+                Lorem ipsun dolor sit amLorem ipsun dolor sit ametLorem ipsun dolor sit ametLorem ipsun dolor sit amet
+            </div>
+        </div>
+        <div class="item">
+            <div class="header"><button>Elemento 3</button></div>
+            <div class="content">
+                Lorem ipsun dolor sit amLorem ipsun dolor sit ametLorem ipsun dolor sit ametLorem ipsun dolor sit amet
+            </div>
+        </div>
+        <div class="item">
+            <div class="header"><button>Elemento 4</button></div>
+            <div class="content">
+                Lorem ipsun dolor sit amLorem ipsun dolor sit ametLorem ipsun dolor sit ametLorem ipsun dolor sit amet
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
